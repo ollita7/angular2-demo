@@ -1,0 +1,21 @@
+<div class="login">
+    <div>
+        <div class="row">
+            <img src="app/assets/img/logo-white.png"/>
+        </div>
+        <div class="row">
+            <h2>Welcome to cavepot timetracker</h2>
+        </div>
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="E-mail" [(ngModel)]="email" />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password" />
+                </div>
+                <button class="btn btn-default btn-red pull-right" (click)="login()" >Login</button>
+            </form>
+        </div>
+        </div>
+</div>

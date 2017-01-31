@@ -1,4 +1,4 @@
-<h1>Users</h1>
+<h1 class="text-center">Users</h1>
 <div class="alert alert-info" role="alert" *ngIf="users.length == 0"> No users </div>
 <table class="table table-striped" *ngIf="users.length > 0">
     <thead>
@@ -11,10 +11,10 @@
     </thead>
     <tr *ngFor="let user of users">
         <td>{{user.name}}</td>
-        <td>{{user.mail}}</td>
+        <td>{{user.email}}</td>
         <td>{{user.age}}</td>
         <td>
-            <a [routerLink]="['/user/',  user.id]" ><span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a> |
+            <a [routerLink]="['/private/user/',  user.id]" ><span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a> |
             <a ><span class="glyphicon glyphicon-trash" aria-hidden="true" ></span></a>
         </td>
     </tr>

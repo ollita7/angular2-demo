@@ -1,0 +1,8 @@
+{
+    "users": [
+        {"id": 1, "name": "Ronaldo", "email": "ronaldo@cavepot.com", "age": 40, "password": "test1234"},
+        {"id": 2, "name": "Romario", "email": "romario@cavepot.com", "age":45, "password": "test1234"},
+        {"id":3, "name": "Forlan", "email": "forlan@cavepot.com", "age":39, "password": "test1234"},
+        {"id":4, "name": "Recoba", "email": "recoba@cavepot.com", "age":40, "password": "test1234"}
+    ]
+}

@@ -1,5 +1,37 @@
+body {
+    background-image: url('../assets/img/background.jpg') ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.login {
+  background:black;
+  position:absolute;
+  color:#fff;
+  top:50%;
+  left:50%;
+  padding:40px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align:center;
+}
+.login img{
+    width:50%;
+}
+.btn-red{
+    background-color: #ed464e;
+    color:white;
+    border-color: #ed464e;
+}
+.btn-red:hover{
+    background-color: #d71b24;
+    color:white;
+    border-color: #d71b24;
+}
 .footer{
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
@@ -10,5 +42,24 @@
 }
 
 .logo{
-    width: 10%;
+    width: 30%;
+}
+
+.header{
+    margin-top: 30px;
+    background-color: black;
+    border-color: black;
+    height: 100px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.sub-header{
+    border-radius:0px;
+}
+
+.content{
+    background-color: rgba(255, 253, 253, 0.97);;
+    border-radius:20px;
+    padding: 10px;
 }

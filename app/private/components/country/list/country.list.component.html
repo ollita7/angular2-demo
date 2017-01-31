@@ -1,0 +1,24 @@
+<h1>Countryes</h1>
+<div class="alert alert-info" role="alert" *ngIf="countries.length == 0"> No countries </div>
+<table class="table table-striped" *ngIf="countries.length > 0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Native name</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Region</th>
+            <th>Sub-region</th>
+            <th>lat-Lng</th>
+        <tr>
+    </thead>
+    <tr *ngFor="let country of countries">
+        <td>{{country.name}}</td>
+        <td>{{country.nativeName}}</td>
+        <td>{{country.capital}}</td>
+        <td>{{country.population}}</td>
+        <td>{{country.region}}</td>
+        <td>{{country.subregion}}</td>
+        <td>{{country.latlng}}</td>
+    </tr>
+</table>

@@ -1,0 +1,6 @@
+<h1 class="text-center">Projects</h1>
+<div class="alert alert-info" role="alert" *ngIf="projects.length == 0"> No projects yet </div>
+<div *ngFor="let project of projects">
+    <h3>{{project.name}}</h3>
+    <p>{{project.description}}</p>
+</div>
