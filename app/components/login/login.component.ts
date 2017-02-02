@@ -20,7 +20,7 @@ export class LoginComponent{
         this.loginService.login(this.email, this.password)
         .subscribe(response => {
             if(response.length > 0 ){
-                this.router.navigate(["private/users"]);
+                this.router.navigate(["private/timesheet"]);
             } else {
                 alert("user or password");
             }

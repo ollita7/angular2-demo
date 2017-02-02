@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
-
 @Component({
-  selector: 'demo-app',
+  selector: 'timetracker',
   templateUrl: './app/components/main/main.component.html'
 })
 export class MainComponent {
-    name = 'Angular';
 }
