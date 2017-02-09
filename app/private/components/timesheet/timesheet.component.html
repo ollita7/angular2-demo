@@ -1,0 +1,27 @@
+<h1 class="text-center">Time</h1>
+<table class="table table-striped" >
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Project</th>
+            <th>Hours</th>
+            <th>Comments</th>
+        <tr>
+    </thead>
+    <tr *ngFor="let time of times">
+        <td>{{ time.date | date }}</td>
+        <td>
+            <select class="form-control">
+                <option>Project 1</option>
+                <option>Project 2</option>
+            </select>
+        </td>
+        <td>
+            <input class="form-control" value="{{time.value}}"/>
+        </td>
+        <td>
+            <input class="form-control" value="{{time.observation}}"/>
+        </td>
+    </tr>
+</table>
+<button class="btn btn-default btn-red pull-right" (click)="login()" >Submit</button>
